@@ -4,7 +4,7 @@
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
 choco feature enable -n allowGlobalConfirmation
-choco install vscode vlc pdfsam postman slack spotify microsoft-teams greenshot whatsapp adobereader googlechrome 7zip sysinternals lastpass-chrome powershell-core vscode-powershell etcher filezilla youtube-dl handbrake onenote nodejs balena-cli angryip poedit inssider speedtest
+choco install vscode vlc pdfsam postman slack telnet microsoft-teams greenshot whatsapp adobereader googlechrome 7zip sysinternals lastpass-chrome powershell-core vscode-powershell etcher filezilla youtube-dl handbrake onenote nodejs balena-cli angryip poedit inssider speedtest spotify
 
 
 npm install -g homey
