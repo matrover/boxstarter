@@ -1,0 +1,16 @@
+#Boxstarter for ARM
+
+#install choco 
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+
+#ARM APP avail. 
+# vscode vlc slack telnet microsoft-teams
+
+#other app bec. no arm app avail
+# greenshot
+
+choco feature enable -n allowGlobalConfirmation
+choco install pdfsam postman   whatsapp adobereader googlechrome 7zip sysinternals bitwarden-chrome powershell-core vscode-powershell etcher filezilla youtube-dl handbrake nodejs balena-cli angryip poedit inssider speedtest paint.net yumi imageresizerapp spotify teamviewer sonos-controller discord notion whatpulse
+
+
+npm install -g homey
