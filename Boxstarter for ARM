@@ -1,16 +1,17 @@
 #Boxstarter for ARM
 
 #install choco 
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
 #ARM APP avail. 
-# vscode vlc slack telnet microsoft-teams
+# vscode vlc slack telnet microsoft-teams googlechrome 7zip sysinternals bitwarden-chrome powershell-core vscode-powershell handbrake paint.net spotify
 
 #other app bec. no arm app avail
-# greenshot
+# greenshot(snipping tool) whatsapp(web) adobereader(chrome) discord(web) notion(web)
 
 choco feature enable -n allowGlobalConfirmation
-choco install pdfsam postman   whatsapp adobereader googlechrome 7zip sysinternals bitwarden-chrome powershell-core vscode-powershell etcher filezilla youtube-dl handbrake nodejs balena-cli angryip poedit inssider speedtest paint.net yumi imageresizerapp spotify teamviewer sonos-controller discord notion whatpulse
+choco install pdfsam postman etcher filezilla youtube-dl balena-cli angryip inssider speedtest imageresizerapp  
 
-
-npm install -g homey
+#not needed anymore:
+#npm install -g homey
+#choco install nodejs poedit yumi teamviewer sonos-controller
